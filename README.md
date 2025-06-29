@@ -38,3 +38,33 @@ Leads the planning and coordination of the project. Manages timelines, task dist
 🔹 Quality Assurance (QA) Engineer
 Tests the application for bugs, functionality, usability, and compatibility. Writes test cases and scenarios to ensure the product meets quality standards before deployment.
 
+⚙️ Technology Stack
+This project uses a modern and scalable set of technologies to build a full-featured web application.
+
+🔹 Django
+A high-level Python web framework used to build the backend logic, RESTful APIs, user authentication, and handle server-side rendering and routing.
+
+🔹 PostgreSQL
+A powerful open-source relational database system used to store and manage structured application data securely and efficiently.
+
+🔹 GraphQL
+A query language for APIs that allows clients to request exactly the data they need, improving performance and flexibility compared to traditional REST APIs.
+
+🔹 HTML5 & CSS3
+Core web technologies used to structure and style the frontend user interface of the application.
+
+🔹 JavaScript
+A dynamic programming language used to enhance interactivity on the frontend and manage user events in real-time.
+
+🔹 React (Optional)
+A modern JavaScript library for building user interfaces using reusable components, making the frontend dynamic and responsive.
+
+🔹 Git & GitHub
+Version control tools used to manage source code history, collaboration, and deployment workflows.
+
+🔹 Docker (Optional)
+Used to containerize the application and its dependencies, enabling consistent development, testing, and deployment across environments.
+
+🔹 RESTful API (within Django)
+A method of communication between the frontend and backend using HTTP requests for accessing or modifying data resources.
+
