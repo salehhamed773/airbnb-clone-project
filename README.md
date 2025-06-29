@@ -143,3 +143,38 @@ An admin interface for managing users, listings, and reports. It allows for mode
 🔹 7. Responsive Design
 Ensures the application is accessible and easy to use across various devices, including desktop, tablet, and mobile. Improves the overall user experience.
 
+:
+
+🔒 API Security
+Securing the backend APIs is essential to protect user data, prevent unauthorized access, and maintain the integrity of the application. Below are the key security measures implemented in this project:
+
+🔹 Authentication
+We use secure methods (e.g., JWT tokens or session-based authentication) to verify the identity of users. This ensures that only registered users can access protected routes and services.
+
+🔐 Importance: Prevents unauthorized access to user accounts and private operations like booking, reviewing, or modifying property data.
+
+🔹 Authorization
+Access control mechanisms are enforced to ensure users can only access resources they are allowed to. For example, only property owners can edit their own listings, and only guests can make bookings.
+
+🔐 Importance: Protects sensitive resources by ensuring users don't access or modify data that doesn't belong to them.
+
+🔹 Rate Limiting
+Limits the number of requests a user or IP address can make in a given time frame to prevent brute-force attacks and abuse.
+
+🔐 Importance: Helps prevent denial-of-service (DoS) attacks and reduces server load from malicious traffic.
+
+🔹 Input Validation & Sanitization
+All user inputs are validated and sanitized to prevent common attacks like SQL Injection and Cross-site Scripting (XSS).
+
+🔐 Importance: Ensures that only valid and safe data is processed by the server, reducing the risk of injection attacks.
+
+🔹 HTTPS Enforcement
+All data exchanged between the client and server is encrypted using HTTPS to ensure secure data transmission.
+
+🔐 Importance: Protects sensitive information such as login credentials and payment details from being intercepted.
+
+🔹 Securing Payment APIs
+Sensitive payment operations are handled securely through third-party providers (e.g., Stripe or PayPal) with tokenized payment data and secure callbacks.
+
+🔐 Importance: Ensures that payment data is never exposed or stored insecurely, protecting both the user and the platform from fraud.
+
