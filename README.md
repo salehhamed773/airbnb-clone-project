@@ -68,3 +68,54 @@ Used to containerize the application and its dependencies, enabling consistent d
 🔹 RESTful API (within Django)
 A method of communication between the frontend and backend using HTTP requests for accessing or modifying data resources.
 
+🗄️ Database Design
+The database is designed to represent the core functionality of an AirBnB-like platform, with a focus on users, property listings, bookings, and payments.
+
+🔹 1. Users
+Field	Description
+id	Primary key, unique identifier for each user
+name	Full name of the user
+email	Unique email address
+password_hash	Encrypted password
+user_type	Either guest or host
+
+📌 Relationship: A user can list multiple properties (if host), and can make multiple bookings (if guest).
+
+🔹 2. Properties
+Field	Description
+id	Primary key
+title	Name or headline of the listing
+description	Detailed description of the property
+location	Address or city
+price_per_night	Cost to stay per night
+host_id	Foreign key referencing the Users table
+
+📌 Relationship: A property is owned by one host (User), and can have many bookings and reviews.
+
+🔹 3. Bookings
+Field	Description
+id	Primary key
+user_id	Foreign key referencing Users (guest)
+property_id	Foreign key referencing Properties
+start_date	Start of the reservation
+end_date	End of the reservation
+
+📌 Relationship: A booking belongs to one user and one property.
+
+🔹 4. Reviews
+Field	Description
+id	Primary key
+user_id	Foreign key referencing Users
+property_id	Foreign key referencing Properties
+rating	Numeric rating (e.g. 1 to 5)
+comment	Textual feedback
+
+📌 Relationship: A user can leave multiple reviews, each review belongs to a property.
+
+🔹 5. Payments
+Field	Description
+id	Primary key
+booking_id	Foreign key referencing Bookings
+amount	Total amount paid
+payment_method	Credit Card, PayPal, etc.
+payment_status	Pending, Completed, Failed
