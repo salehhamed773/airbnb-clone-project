@@ -178,3 +178,43 @@ Sensitive payment operations are handled securely through third-party providers 
 
 🔐 Importance: Ensures that payment data is never exposed or stored insecurely, protecting both the user and the platform from fraud.
 
+🚀 CI/CD Pipeline
+CI/CD stands for Continuous Integration and Continuous Deployment (or Delivery). It is a set of automated processes that help developers integrate changes to the project codebase, test them, and deploy them to production environments efficiently and reliably.
+
+🔹 What is CI/CD?
+Continuous Integration (CI): Automatically builds and tests code whenever a change is pushed to the repository. It helps catch bugs early and ensures the project remains functional.
+
+Continuous Deployment/Delivery (CD): Automatically deploys the latest changes to staging or production environments after passing tests. This ensures faster release cycles and fewer human errors.
+
+✅ Importance:
+
+Reduces manual work
+
+Ensures code quality through automated testing
+
+Speeds up development and deployment
+
+Enhances team collaboration and confidence in code changes
+
+🔹 Tools Used
+Tool	Purpose
+GitHub Actions	Automates workflows for testing, building, and deploying code directly from GitHub
+Docker	Packages the application into containers to ensure consistent environments across development, testing, and production
+Heroku / Render / AWS	Hosting services where the application can be deployed
+PostgreSQL / SQLite	Managed within the pipeline to run integration tests on a test database
+
+🛠️ Sample CI Workflow (using GitHub Actions)
+Trigger: On every push or pull request
+
+Steps:
+
+Set up Python/Node.js environment
+
+Install dependencies
+
+Run unit tests
+
+Build Docker image (optional)
+
+Deploy to staging/production
+
