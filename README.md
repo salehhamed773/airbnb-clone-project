@@ -119,3 +119,27 @@ booking_id	Foreign key referencing Bookings
 amount	Total amount paid
 payment_method	Credit Card, PayPal, etc.
 payment_status	Pending, Completed, Failed
+🧩 Feature Breakdown
+This section outlines the core features implemented in the AirBnB Clone project. Each feature contributes to building a realistic and functional accommodation booking platform.
+
+🔹 1. User Management
+Allows users to register, log in, and manage their profiles. The system supports both guests and hosts, ensuring secure authentication and role-based access to features.
+
+🔹 2. Property Management
+Hosts can list new properties, add descriptions, upload images, set pricing, and manage availability. This feature is essential to enable hosts to manage their rental offerings.
+
+🔹 3. Booking System
+Guests can view available listings, select dates, and make bookings. This module handles date validation, booking overlaps, and ties bookings to both users and properties.
+
+🔹 4. Review & Rating System
+Guests can leave reviews and rate their stays after bookings are completed. This builds trust and helps future users evaluate the quality of a property.
+
+🔹 5. Payment Integration
+Handles secure payment processing for confirmed bookings. Supports basic payment methods and stores transaction records for reference and future enhancements.
+
+🔹 6. Admin Panel (Optional/Advanced)
+An admin interface for managing users, listings, and reports. It allows for moderation of content and handling user issues more efficiently.
+
+🔹 7. Responsive Design
+Ensures the application is accessible and easy to use across various devices, including desktop, tablet, and mobile. Improves the overall user experience.
+
